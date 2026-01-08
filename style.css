@@ -1,0 +1,106 @@
+/* Page background */
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Login card */
+.login-box {
+  width: 330px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  text-align: center;
+  color: white;
+  animation: pop 0.6s ease;
+}
+
+/* Heading */
+.login-box h2 {
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+/* Input box with icon */
+.input-group {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.9);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 12px 0;
+}
+
+.input-group i {
+  color: #555;
+  margin-right: 10px;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #ff512f, #dd2476);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+
+/* Links */
+.links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links a {
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+
+/* Animation */
+@keyframes pop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* Result message */

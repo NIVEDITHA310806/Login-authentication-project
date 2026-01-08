@@ -1,0 +1,49 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+  <div class="login-box">
+    <h2>Login</h2>
+
+    <input type="email" id="email" placeholder="Enter email">
+    <input type="password" id="password" placeholder="Enter password">
+
+    <button onclick="login()">Login</button>
+
+    <p id="result"></p>
+  <div class="links">
+  <a href="#">Forgot password?</a>
+  <a href="#">Sign up</a>
+</div>
+  
+  </div>
+
+  <script>
+    
+function login() {
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  const result = document.getElementById("result");
+
+  if (email === "test@gmail.com" && password === "1234") {
+    result.style.color = "lightgreen";
+    result.innerHTML = "Login successful ✅";
+  } else {
+    result.style.color = "red";
+    result.innerHTML = "Invalid email or password ❌";
+  }
+}
+</script>
+  </script>
+
+</body>
+</html>
